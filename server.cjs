@@ -219,7 +219,7 @@ app.post('/api/add-token', async (req,res)=>{
 });
 
 // ===== NEW PROXIES (keeps keys server-side; avoids CORS) =====
-const ABS_ETHERSCAN_BASE = process.env.ABS_ETHERSCAN_BASE || 'https://api.etherscan.io/v2/api';
+const ABS_ETHERSCAN_BASE = process.env.ABS_ETHERSCAN_BASE || 'https://api.dexscreener.com/tokens/v1/abstract/ ';
 const ABS_ETHERSCAN_KEY  = process.env.ABS_ETHERSCAN_KEY  || 'H13F5VZ64YYK4M21QMPEW78SIKJS85UTWT';
 
 async function _cachedGet(url, ttlMs=300000){
